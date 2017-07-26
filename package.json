@@ -1,0 +1,33 @@
+{
+  "name": "mdi-stylus",
+  "version": "0.0.1",
+  "description": "material design icons port to stylus",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syarul/mdi-stylus.git"
+  },
+  "keywords": [
+    "materialdesign",
+    "materialdesignicons",
+    "Material Design Icons",
+    "stylus",
+    "mdi"
+  ],
+  "author": "Shahrul Nizam Selamat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/syarul/mdi-stylus/issues"
+  },
+  "homepage": "https://github.com/syarul/mdi-stylus#readme",
+  "devDependencies": {
+    "mdi": "^2.0.46",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.3",
+    "gulp-stylint": "^4.0.0",
+    "gulp-stylus": "^2.6.0"
+  }
+}

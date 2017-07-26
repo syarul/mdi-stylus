@@ -1,0 +1,28 @@
+//Main file importer
+@import "variables"
+@import "mixins"
+@import "path"
+@import "core"
+@import "larger"
+@import "color"
+@import "spinning"
+@import "rotated-flipped"
+
+/**
+ * Use icons as needed
+ * 
+ * Examples:
+ *   .{$mdi-css-prefix}-adjust
+ *     mdi-icon("adjust")
+ */
+mdi-icon($icon, $position="before")
+  &:{$position}
+    content $mdi-icons[$icon]
+
+/**
+ * Enable all icons
+ */
+import-all-icons()
+  for icon in $mdi-icons
+    .{$mdi-css-prefix}-{icon}
+      mdi-icon(icon)
