@@ -14,7 +14,7 @@ npm install mdi-stylus --save
 
 ## Initialization
 
-### Initial
+### Initial( if you need custom fonts)
 
 You need to install font forge and set to environment variables or use the `node engine` option if it work for you
 
@@ -22,7 +22,7 @@ Run ```git submodules update``` to get latest material design svg files, you can
 
 modify `Gruntfile.js` to compile `template_styl_variables` and copy the generated ```icon.styl```
 
-into ```mdi-stylus\icons\variables.styl``` if you need to view demo run the `template_html_demo` from the `Gruntfile.js`
+into ```mdi-stylus\icons\variables.styl```. If you need to view demo run the `template_html_demo` from the `Gruntfile.js`
 
 ### Set up compiler to use `mdi-stylus`
 
