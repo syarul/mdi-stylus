@@ -1,0 +1,16 @@
+/*!
+ *  MaterialDesign-Webfont by @templarian - https://materialdesignicons.com/
+ *  License - https://github.com/Templarian/MaterialDesign/blob/master/license.txt (Font: SIL OFL 1.1)
+ */
+$mdi-font-name ?= "mdi"
+$mdi-file-name ?= "<%= fontBaseName %>"
+$mdi-font-path ?= "../fonts"
+$mdi-font-weight ?= "regular"
+$mdi-version ?= "2.0.46"
+$mdi-font-size-base ?= 24px
+$mdi-line-height-base ?= 1
+$mdi-css-prefix ?= mdi
+
+$mdi-icons = { <% if (iconsStyles) { for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+  <%= glyphs[glyphIdx] %>: "\<%= codepoints[glyphIdx] %>",<% } %><% } %>
+}

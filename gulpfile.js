@@ -4,12 +4,6 @@ var gulp = require('gulp')
 ,	mdiStylus = require('./index')
 ,	shell = require('gulp-shell')
 
-//extra converter from svg, need the git submodules, some conversion is not correct
-gulp.task('convert', function () {
-  return gulp.src('')
-  .pipe(shell('icon-font mdi-git/icons/svg/*.svg ./font --font-family=Material Design Icons'));
-});
-
 gulp.task('clean', function () {
   return gulp.src('')
   .pipe(shell(['rm -rf test/*.css']));

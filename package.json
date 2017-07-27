@@ -1,6 +1,6 @@
 {
   "name": "mdi-stylus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "material design icons port to stylus",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/syarul/mdi-stylus#readme",
   "devDependencies": {
-    "mdi": "^2.0.46",
+    "grunt-webfont": "^1.6.0",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.6.3",
     "gulp-stylint": "^4.0.0",
