@@ -1,6 +1,6 @@
 {
   "name": "mdi-stylus",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "material design icons port to stylus",
   "main": "index.js",
   "scripts": {
