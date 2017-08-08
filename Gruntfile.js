@@ -1,5 +1,3 @@
-/*jshint node:true*/
-
 var path = require('path');
 
 module.exports = function(grunt) {
@@ -9,29 +7,26 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		webfont: {
-			// template_styl_variables: {
-			// 	src: 'MaterialDesign/icons/svg/*.svg',
-			// 	dest: 'template/tmp',
-			// 	options: {
-			// 		hashes: false,
-			// 		htmlDemo: false,
-			// 		types: '',
-			// 		template: 'templates/template.styl'
-			// 	}
-			// },
-			// template_html_demo: {
-			// 	src: 'MaterialDesign/icons/svg/*.svg',
-			// 	dest: 'demo',
-			// 	options: {
-			// 		hashes: false
-			// 	}
-			// },
+			template_styl_variables: {
+				src: 'MaterialDesign/icons/svg/*.svg',
+				dest: 'mdi-stylus/icons',
+				options: {
+					font: 'variables',
+					hashes: false,
+					htmlDemo: false,
+					types: '',
+					template: 'templates/template.styl'
+				}
+			},
 			gen_fonts: {
 				src: 'MaterialDesign/icons/svg/*.svg',
+				// src: 'new_svg/*.svg',
 				dest: 'fonts',
 				options: {
 					hashes: false,
-					types: 'eot,woff2,woff,ttf,svg',
+					htmlDemo: true,
+					// types: 'eot,woff2,woff,ttf,svg',
+					types: ['woff2','woff']
 					// engine: 'node'
 				}
 			},
