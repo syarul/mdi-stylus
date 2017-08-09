@@ -1,9 +1,9 @@
 var gulp = require('gulp')
-,	stylus = require('gulp-stylus')
-,	stylint = require('gulp-stylint')
-,	mdiStylus = require('./index')
-,	shell = require('gulp-shell')
-,	webfont = require('gulp-webfont')
+, stylus = require('gulp-stylus')
+, stylint = require('gulp-stylint')
+, mdiStylus = require('./index')
+, shell = require('gulp-shell')
+, webfont = require('gulp-webfont')
 
 gulp.task('clean', function () {
   return gulp.src('')
@@ -14,22 +14,14 @@ gulp.task('test', function () {
     return gulp.src('test/*.styl')
         .pipe(stylint())
         .pipe(stylus({ use: [ 
-        	mdiStylus()
+          mdiStylus()
         ]}))
         .pipe(gulp.dest('./test'))
 });
 
-
-var webfont_config = {
-	font: 'testto',
-    types:'woff',
-    // ligatures: true
-}
-
-gulp.task('conv', function () {
+gulp.task('move', function () {
   return gulp.src('new_svg/*.svg')
-    .pipe(webfont(webfont_config))
-    .pipe(gulp.dest('fonts'));
+    .pipe(gulp.dest('MaterialDesign/icons/svg'));
 })
 
 gulp.task('default', ['clean', 'test']);

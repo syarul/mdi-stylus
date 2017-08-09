@@ -7,6 +7,18 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		webfont: {
+			gen_fonts: {
+				src: 'MaterialDesign/icons/svg/*.svg',
+				// src: 'new_svg/*.svg',
+				dest: 'fonts',
+				options: {
+					hashes: false,
+					htmlDemo: true,
+					// types: 'eot,woff2,woff,ttf,svg',
+					types: ['woff2','woff']
+					// engine: 'node'
+				}
+			},
 			template_styl_variables: {
 				src: 'MaterialDesign/icons/svg/*.svg',
 				dest: 'mdi-stylus/icons',
@@ -17,19 +29,7 @@ module.exports = function(grunt) {
 					types: '',
 					template: 'templates/template.styl'
 				}
-			},
-			// gen_fonts: {
-			// 	src: 'MaterialDesign/icons/svg/*.svg',
-			// 	// src: 'new_svg/*.svg',
-			// 	dest: 'fonts',
-			// 	options: {
-			// 		hashes: false,
-			// 		htmlDemo: true,
-			// 		// types: 'eot,woff2,woff,ttf,svg',
-			// 		types: ['woff2','woff']
-			// 		// engine: 'node'
-			// 	}
-			// },
+			}
 		}
 	});
 
