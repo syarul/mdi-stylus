@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/syarul/mdi-stylus#readme",
   "devDependencies": {
-    "grunt-webfont": "^1.6.0",
+    "grunt-webfont": "1.6.0",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.6.3",
     "gulp-stylint": "^4.0.0",
