@@ -1,27 +1,35 @@
-var gulp = require('gulp')
-, stylus = require('gulp-stylus')
-, stylint = require('gulp-stylint')
-, mdiStylus = require('./index')
-, shell = require('gulp-shell')
-, webfont = require('gulp-webfont')
+const gulp = require('gulp')
+const stylus = require('gulp-stylus')
+const stylint = require('gulp-stylint')
+const mdiStylus = require('./index')
+const shell = require('gulp-shell')
+const webfont = require('gulp-webfont')
+const rename = require('gulp-rename')
+const path = require('path')
 
-gulp.task('clean', function () {
-  return gulp.src('')
-  .pipe(shell(['rm -rf test/*.css']));
-});
+gulp.task('clean', () =>
+  gulp.src('')
+  .pipe(shell(['rm -rf test/*.css']))
+)
 
-gulp.task('test', function () {
-    return gulp.src('test/*.styl')
-        .pipe(stylint())
-        .pipe(stylus({ use: [ 
-          mdiStylus()
-        ]}))
-        .pipe(gulp.dest('./test'))
-});
+gulp.task('test', () =>
+  gulp.src('test/*.styl')
+      .pipe(stylint())
+      .pipe(stylus({ use: [ 
+        mdiStylus()
+      ]}))
+      .pipe(gulp.dest('./test'))
+)
 
-gulp.task('move', function () {
-  return gulp.src('new_svg/*.svg')
-    .pipe(gulp.dest('MaterialDesign/icons/svg'));
-})
+// rename null.svg to icon-null.svg ***needed***
+gulp.task('rem', () =>
+  gulp.src('')
+    .pipe(shell('mv MaterialDesign/icons/svg/null.svg MaterialDesign/icons/svg/icon-null.svg'))
+)
 
-gulp.task('default', ['clean', 'test']);
+gulp.task('move', () =>
+  gulp.src('new_svg/*.svg')
+    .pipe(gulp.dest('MaterialDesign/icons/svg'))
+)
+
+gulp.task('default', ['clean', 'test'])
