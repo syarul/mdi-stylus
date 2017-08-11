@@ -1,9 +1,9 @@
-var path = require('path');
+const path = require('path')
 
-module.exports = function(grunt) {
-	'use strict';
+module.exports = grunt => {
+	'use strict'
 
-	require('load-grunt-tasks')(grunt);
+	require('load-grunt-tasks')(grunt)
 
 	grunt.initConfig({
 		webfont: {
@@ -31,9 +31,9 @@ module.exports = function(grunt) {
 				}
 			}
 		}
-	});
+	})
 
 	grunt.loadNpmTasks('grunt-webfont')
-	grunt.registerTask('default', ['webfont']);
+	grunt.registerTask('default', ['webfont'])
 
-};
+}
