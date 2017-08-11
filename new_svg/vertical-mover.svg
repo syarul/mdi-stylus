@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 8 24" style="enable-background:new 0 0 8 24;" xml:space="preserve">
-<rect x="3.4" y="18.5" transform="matrix(1.369713e-02 -0.9999 0.9999 1.369713e-02 -15.6198 23.0967)" width="1.1" height="2"/>
-<rect x="3.4" y="16.3" transform="matrix(1.369713e-02 -0.9999 0.9999 1.369713e-02 -13.458 21.022)" width="1.1" height="2"/>
-<rect x="3.4" y="14.2" transform="matrix(1.369713e-02 -0.9999 0.9999 1.369713e-02 -11.2963 18.9473)" width="1.1" height="2"/>
-<rect x="3.5" y="12.1" transform="matrix(1.369713e-02 -0.9999 0.9999 1.369713e-02 -9.1345 16.8726)" width="1.1" height="2"/>
-<rect x="3.5" y="9.9" transform="matrix(1.369713e-02 -0.9999 0.9999 1.369713e-02 -6.9728 14.7979)" width="1.1" height="2"/>
-<rect x="3.5" y="7.8" transform="matrix(1.369713e-02 -0.9999 0.9999 1.369713e-02 -4.811 12.7232)" width="1.1" height="2"/>
-<rect x="3.5" y="5.7" transform="matrix(1.369713e-02 -0.9999 0.9999 1.369713e-02 -2.6493 10.6485)" width="1.1" height="2"/>
-<rect x="3.6" y="3.5" transform="matrix(1.369713e-02 -0.9999 0.9999 1.369713e-02 -0.4875 8.5738)" width="1.1" height="2"/>
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<rect x="11" y="4.5" width="2" height="1"/>
+<rect x="11" y="6.5" width="2" height="1"/>
+<rect x="11" y="8.5" width="2" height="1"/>
+<rect x="11" y="10.5" width="2" height="1"/>
+<rect x="11" y="12.5" width="2" height="1"/>
+<rect x="11" y="14.5" width="2" height="1"/>
+<rect x="11" y="16.5" width="2" height="1"/>
+<rect x="11" y="18.5" width="2" height="1"/>
 </svg>
