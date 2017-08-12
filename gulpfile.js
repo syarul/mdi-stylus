@@ -3,9 +3,6 @@ const stylus = require('gulp-stylus')
 const stylint = require('gulp-stylint')
 const mdiStylus = require('./index')
 const shell = require('gulp-shell')
-const webfont = require('gulp-webfont')
-const rename = require('gulp-rename')
-const path = require('path')
 
 gulp.task('clean', () =>
   gulp.src('')
