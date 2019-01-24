@@ -21,12 +21,12 @@ gulp.task('test', () =>
 // rename null.svg to icon-null.svg ***needed***
 gulp.task('rem', () =>
   gulp.src('')
-    .pipe(shell('mv MaterialDesign/icons/svg/null.svg MaterialDesign/icons/svg/icon-null.svg'))
+    .pipe(shell('mv node_modules/@mdi/svg/svg/null.svg node_modules/@mdi/svg/svg/icon-null.svg'))
 )
 
 gulp.task('move', () =>
   gulp.src('new_svg/*.svg')
-    .pipe(gulp.dest('MaterialDesign/icons/svg'))
+    .pipe(gulp.dest('node_modules//@mdi/svg/svg'))
 )
 
 gulp.task('default', ['clean', 'test'])

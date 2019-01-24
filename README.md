@@ -3,6 +3,8 @@
 
 [![Build Status](https://travis-ci.org/syarul/mdi-stylus.svg)](https://travis-ci.org/syarul/mdi-stylus)
 
+> Material Design Icons Version 3.3.92
+
 allowing icons to be selectively chosen
 or included all at once.
 

@@ -7,20 +7,17 @@ module.exports = grunt => {
 
 	grunt.initConfig({
 		webfont: {
-			gen_fonts: {
-				src: 'MaterialDesign/icons/svg/*.svg',
-				// src: 'new_svg/*.svg',
-				dest: 'fonts',
-				options: {
-					hashes: false,
-					htmlDemo: true,
-					// types: 'eot,woff2,woff,ttf,svg',
-					types: ['woff2','woff']
-					// engine: 'node'
-				}
-			},
+			// gen_fonts: {
+			// 	src: 'node_modules/@mdi/svg/svg/*.svg',
+			// 	dest: 'fonts',
+			// 	options: {
+			// 		hashes: false,
+			// 		htmlDemo: true,
+			// 		engine: 'node'
+			// 	}
+			// },
 			template_styl_variables: {
-				src: 'MaterialDesign/icons/svg/*.svg',
+				src: 'node_modules/@mdi/svg/svg/*.svg',
 				dest: 'mdi-stylus/icons',
 				options: {
 					font: 'variables',
